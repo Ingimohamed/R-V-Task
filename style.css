@@ -66,3 +66,26 @@
   .border-raduis-20{
       border-radius: 20px;
   }
+  .border-zero{
+    border-radius: 0;
+  }
+  form.form-inline{
+    position: relative;
+  }
+  .fa-search{
+    position: absolute;
+    position: absolute;
+    top: 30%;
+    color: #847592;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    z-index: 1;
+  }
+  .inputSearch::placeholder{
+    padding-left: 20px;
+  }
+  .btn-group-toggle{
+    flex: 1!important;
+    max-width: fit-content;
+  }
