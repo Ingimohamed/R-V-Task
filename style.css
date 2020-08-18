@@ -89,3 +89,22 @@
     flex: 1!important;
     max-width: fit-content;
   }
+  .color-gray{
+    color:gray;
+  }
+  .link{
+    color:#45b6fe;
+    cursor: pointer;
+  }
+  .link:hover {
+    color:#3792cb;
+  }
+  .tagGrid{
+    display: grid;
+    grid-template-columns: 110px 117px 122px 133px;
+    grid-template-rows: 55px 70px;
+    padding: 3% 23%;
+  }
+  .gridItem1{
+
+  }

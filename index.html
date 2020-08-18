@@ -14,8 +14,8 @@
   <body>
       <!-- first Section -->
    <section id="first-section">
-        <div class="container-fluid py">
-            <h2>Featured Posts</h2>
+        <div class="container-fluid py-5">
+            <h2 class="pl-3">Featured Posts</h2>
             <hr class="ml-14">
             <!-- First row-->
             <div class="row">
@@ -23,8 +23,8 @@
                     <img class="col-md-12" src="images/img (1).jpg" alt="">
                     <h2 class="col-md-12">Post title place</h2>
                     <div class="col-md-12">
-                       <p class="float-left"><i class="fas fa-user-alt"></i>Author</p>
-                       <p class="float-left"><i class="far fa-clock"></i>22/12/2030</p>
+                       <p class="float-left mr-5 color-gray"><i class="fas fa-user-alt m-2"></i>Author</p>
+                       <p class="float-left color-gray"><i class="far fa-clock m-2"></i>22/12/2030</p>
                        <p class="text-justify display-inlineBlock">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     <a href="">Read more<i class="fas fa-arrow-circle-right"></i></a>
                     </div>
@@ -34,27 +34,27 @@
                     <div class="media position-relative">
                         <img class="col-md-6 col-6" src="images/img (2).jpg" class="mr-3 mb-5" alt="...">
                         <div class="media-body col-md-6 col-6">
-                          <h5 class="mt-0 text-justify">Media with stretched link</h5>
-                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
-                          <a href="#" class="stretched-link">Go somewhere</a>
+                          <h5 class="mt-0 text-justify link">Media with stretched link</h5>
+                          <p class="float-left color-gray"><i class="fas fa-user-alt m-2"></i>Author</p>
+                          <p class="float-left color-gray"><i class="far fa-clock m-2"></i>22/12/2030</p>
                         </div>
                       </div>
                       <hr>
                       <div class="media position-relative">
                         <img class="col-md-6 col-6" src="images/img (3).jpg" class="mr-3 mb-5" alt="...">
                         <div class="media-body col-md-6 col-6">
-                          <h5 class="mt-0 text-justify">Media with stretched link</h5>
-                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
-                          <a href="#" class="stretched-link">Go somewhere</a>
+                          <h5 class="mt-0 text-justify link">Media with stretched link</h5>
+                          <p class="float-left color-gray"><i class="fas fa-user-alt m-2"></i>Author</p>
+                          <p class="float-left color-gray"><i class="far fa-clock m-2"></i>22/12/2030</p>
                         </div>
                       </div>
                       <hr>
                       <div class="media position-relative">
                         <img class="col-md-6 col-6" src="images/img (4).jpg" class="mr-3 mb-5" alt="...">
                         <div class="media-body col-md-6 col-6">
-                          <h5 class="mt-0 text-justify">Media with stretched link</h5>
-                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
-                          <a href="#" class="stretched-link">Go somewhere</a>
+                          <h5 class="mt-0 text-justify link">Media with stretched link</h5>
+                          <p class="float-left color-gray"><i class="fas fa-user-alt m-2"></i>Author</p>
+                          <p class="float-left color-gray"><i class="far fa-clock m-2"></i>22/12/2030</p>
                         </div>
                       </div>
 
@@ -111,65 +111,54 @@
                         <button class="col-md-2 ml-auto btn btn-primary border-raduis-20 my-2 my-sm-0" type="submit">ADD</button>
                       </form>
 
-                      <div class="row row justify-content-center">
+                      <div class="row row justify-content-center pt-4">
                         <h4 class="text-center font-weight-bold">TAG CLOUD</h4>
                       </div>
-                      <div class="togglrBtn p-3 row pl-5">
-                          
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+
+                     <!-- Tag grid-->
+                          <div class="tagGrid">
+                            <div class="btn-group-toggle gridItem1" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> HTML<i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem2" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> CSS Grid <i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem3" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> Bootstrap <i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem4" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> JavaScript <i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem5" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> JQuery <i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                        </div>
-                        <div class="row pl-4">
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem6" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> React JS <i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem7" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> SCSS <i class="fas fa-times-circle"></i>
                                 </label>
                             </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
+                            <div class="btn-group-toggle gridItem8" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
                                 <input type="checkbox" checked> Adobe XD <i class="fas fa-times-circle"></i>
                                 </label>
-                            </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> Photoshop <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle col-md-2" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> InDesign <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                         
-                    </div>
+                            </div>  
+                        </div>
+                        <!-- /tag grid-->
                 </div>
                 <!-- / column Two-->
             </div>
@@ -183,5 +172,29 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+   
+         <script>
+           
+$(document).ready(function() {
+    
+    var $deleteButton = $('.fa-times-circle');
+
+    $deleteButton.on('click', function(event) {
+      event.preventDefault();
+
+      var $button = $(this);
+        var $item = $button.closest('.tagGrid');
+
+        $item.addClass('removed-item')
+        
+            .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+          
+                $(this).remove();
+        });
+      
+    });
+    
+});
+            </script>  
+</body>
 </html>
