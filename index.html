@@ -29,7 +29,7 @@
                     <a href="">Read more<i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-5 col-12">
+                <div class="col-md-5 col-12 pad-y-mobile">
                   
                     <div class="media position-relative">
                         <img class="col-md-6 col-6" src="images/img (2).jpg" class="mr-3 mb-5" alt="...">
@@ -64,10 +64,10 @@
             <!-- Second row-->
             <div class="row py-5">
                 <!--  column One-->
-                <div class="col-md-4 col-6">
+                <div class="col-lg-4 col-xl-4 col-md-6 col-12 pad-mobile">
                     <div class="row">
                         <label class="switch  float-left">
-                            <input type="checkbox">
+                            <input id="checkAllBtn" type="checkbox">
                             <span class="slider"></span>
                           </label>
                           <p class="ml-auto">Toggle All</p>
@@ -75,7 +75,7 @@
                     <hr>
                     <div class="row">
                         <label class="switch  float-left">
-                            <input type="checkbox">
+                            <input id="checkBtn" type="checkbox">
                             <span class="slider"></span>
                           </label>
                           <p class="ml-auto">Automatic Updates</p>
@@ -104,11 +104,10 @@
                 </div>
                 <!-- / column One-->
                 <!-- column Two-->
-                <div class="col-md-8 col-6">
+                <div class="col-lg-8 col-xl-8 col-md-6 col-12">
                     <form class="form-inline col-md-12 my-2 my-lg-0">
-                        <i class="fas fa-search"></i>
-                        <input class="inputSearch border-zero col-md-9 form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-                        <button class="col-md-2 ml-auto btn btn-primary border-raduis-20 my-2 my-sm-0" type="submit">ADD</button>
+                        <input class="inputSearch border-zero col-lg-9 col-xl-9 col-9 col-md-9 form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="add-btn btn btn-primary border-raduis-20 my-2 my-sm-0" type="submit">ADD</button>
                       </form>
 
                       <div class="row row justify-content-center pt-4">
@@ -117,46 +116,12 @@
 
                      <!-- Tag grid-->
                           <div class="tagGrid">
-                            <div class="btn-group-toggle gridItem1" data-toggle="buttons">
+                            <!-- <div class="btn-group-toggle gridItem1" data-toggle="buttons">
                                 <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> HTML<i class="fas fa-times-circle"></i>
+                                   <input type="checkbox" checked> HTML<i class="fas fa-times-circle"></i>
                                 </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem2" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> CSS Grid <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem3" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> Bootstrap <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem4" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> JavaScript <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem5" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> JQuery <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem6" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> React JS <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem7" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> SCSS <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>
-                            <div class="btn-group-toggle gridItem8" data-toggle="buttons">
-                                <label class="btn btn-secondary border-raduis-20 active">
-                                <input type="checkbox" checked> Adobe XD <i class="fas fa-times-circle"></i>
-                                </label>
-                            </div>  
+                            </div> -->
+                        
                         </div>
                         <!-- /tag grid-->
                 </div>
@@ -173,28 +138,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
    
-         <script>
-           
-$(document).ready(function() {
-    
-    var $deleteButton = $('.fa-times-circle');
-
-    $deleteButton.on('click', function(event) {
-      event.preventDefault();
-
-      var $button = $(this);
-        var $item = $button.closest('.tagGrid');
-
-        $item.addClass('removed-item')
-        
-            .one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-          
-                $(this).remove();
-        });
-      
-    });
-    
-});
-            </script>  
+      <script src="app.js"></script>
 </body>
 </html>
