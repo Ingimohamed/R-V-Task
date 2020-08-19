@@ -117,6 +117,7 @@
     padding: 3% 4%;
     grid-auto-rows: auto;
     grid-row-gap: 10px;
+    grid-column-gap: 7px;
   }
   .fall{
     transform: translateY(8rem) rotateZ(20deg);
@@ -129,6 +130,9 @@
   border: 1px solid blue;
   width: 12%;
   margin-left: 4%;
+}
+.btn-group-toggle label{
+  width: max-content;
 }
 
 /*Media Query*/
@@ -143,7 +147,7 @@
     padding: 3% 10%;
   }
   .add-btn {
-    width: 21%;
+    width: 13%;
     margin-left: 3%;
 }
 .pad-y-mobile{
@@ -151,6 +155,33 @@
 }
 
 }
+/* pad screen*/
+/* @media(max-width:1113px){
+  .tagGrid {
+    grid-template-columns: repeat(6,auto);
+  }
+} */
+@media(max-width:1112px) and (min-width:1003px){
+  .tagGrid {
+    grid-template-columns: repeat(5,auto);
+  }
+}
+@media(max-width:1002px) and (min-width:992px){
+  .tagGrid {
+    grid-template-columns: repeat(4,auto);
+  }
+}
+@media(max-width:991px) and (min-width:872px){
+  .tagGrid {
+    grid-template-columns: repeat(3,auto);
+  }
+}
+@media(max-width:871px) and (min-width:768px){
+  .tagGrid {
+    grid-template-columns: repeat(2,auto);
+  }
+}
+/*Mobile screen */
 @media(max-width:767px) and (min-width:730px){
   .tagGrid {
     grid-template-columns: repeat(5,auto);
